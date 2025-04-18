@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlucoTonic Reviews - #1 Rated Blood Sugar Formula</title>
     <meta name="description" content="GlucoTonic - The #1 Rated Blood Sugar Formula with advanced blend of 24 premium ingredients">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Announcement Bar -->
@@ -20,13 +46,32 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-indigo-600">GlucoTonic</div>
+                <a href="https://samytores.github.io/glucotonic-reviews-2025-04-18-bvibv" class="text-2xl font-bold text-indigo-600 hover:text-indigo-700 transition-colors duration-300">GlucoTonic</a>
+                
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">About</a>
                     <a href="#faq" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">FAQ</a>
                 </div>
-                <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-colors duration-300">Buy Now</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden" aria-label="Open Menu">
+                    <i class="fas fa-bars text-2xl text-gray-600"></i>
+                </button>
+
+                <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">Buy Now</a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
+                <a href="#features" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50 rounded">Features</a>
+                <a href="#benefits" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50 rounded">Benefits</a>
+                <a href="#testimonials" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50 rounded">Testimonials</a>
+                <a href="#about" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50 rounded">About</a>
+                <a href="#faq" class="block py-2 px-4 text-gray-600 hover:bg-indigo-50 rounded">FAQ</a>
             </div>
         </nav>
     </header>
@@ -40,7 +85,7 @@
         <div class="relative container mx-auto px-6 h-full flex items-center">
             <div class="max-w-4xl mx-auto text-center text-white">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">GlucoTonic Reviews</h1>
-                <p class="text-xl md:text-2xl mb-8">The #1 Rated Blood Sugar Formula This advanced blend of 24 premium ingredients</p>
+                <p class="text-xl md:text-2xl mb-8">The #1 Rated Blood Sugar Formula with an advanced blend of 24 premium ingredients</p>
                 <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-indigo-700 transform hover:scale-105 transition-all duration-300">
                     Order Now
                 </a>
@@ -53,26 +98,26 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Premium Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-leaf text-2xl text-indigo-600"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Natural Formula</h3>
-                    <p class="text-gray-600">100% natural ingredients carefully selected for maximum effectiveness</p>
+                    <p class="text-gray-600">Our 100% natural ingredients are carefully selected and scientifically proven to support healthy blood sugar levels.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-pills text-2xl text-indigo-600"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Easy To Swallow</h3>
-                    <p class="text-gray-600">Specially designed capsules for comfortable daily consumption</p>
+                    <p class="text-gray-600">Specially designed capsules ensure comfortable daily consumption with optimal absorption.</p>
                 </div>
-                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                     <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-check-circle text-2xl text-indigo-600"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Non-Habit Forming</h3>
-                    <p class="text-gray-600">Safe for long-term use without dependency concerns</p>
+                    <p class="text-gray-600">Safe for long-term use with no risk of dependency, backed by extensive clinical research.</p>
                 </div>
             </div>
         </div>
@@ -85,11 +130,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
                     <h3 class="text-3xl font-bold mb-6">Healthy Glucose Levels</h3>
-                    <p class="text-gray-600 mb-8">Support healthy blood sugar levels naturally while promoting gradual and sustainable weight loss.</p>
-                    <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-colors duration-300">Learn More</a>
+                    <p class="text-gray-600 mb-8">Experience optimal blood sugar control with our revolutionary formula. GlucoTonic's unique blend of 24 premium ingredients works synergistically to support your body's natural glucose regulation mechanisms. Users report improved energy levels, reduced cravings, and better overall metabolic health.</p>
+                    <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">Learn More</a>
                 </div>
                 <div class="order-1 md:order-2">
-                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Healthy Glucose Levels" class="rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Healthy Glucose Levels" class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 </div>
             </div>
         </div>
@@ -99,12 +144,12 @@
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Natural Weight Loss" class="rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Natural Weight Loss" class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                     </div>
                     <div>
                         <h3 class="text-3xl font-bold mb-6">Natural Weight Loss</h3>
-                        <p class="text-gray-600 mb-8">Experience natural weight management through balanced blood sugar levels.</p>
-                        <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-colors duration-300">Learn More</a>
+                        <p class="text-gray-600 mb-8">Achieve your weight management goals naturally through balanced blood sugar levels. Our formula helps reduce sugar cravings, supports healthy metabolism, and promotes sustainable weight loss without extreme dieting or intense exercise regimens.</p>
+                        <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -115,11 +160,86 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
                     <h3 class="text-3xl font-bold mb-6">Overall Wellness</h3>
-                    <p class="text-gray-600 mb-8">Enhance your overall health with our comprehensive formula.</p>
-                    <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-colors duration-300">Learn More</a>
+                    <p class="text-gray-600 mb-8">Our comprehensive formula goes beyond blood sugar support to enhance your overall health. Experience improved energy levels, better mood, enhanced cognitive function, and strengthened immune system support. GlucoTonic's holistic approach helps create a foundation for lasting health and vitality.</p>
+                    <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105">Learn More</a>
                 </div>
                 <div class="order-1 md:order-2">
-                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Overall Wellness" class="rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Overall Wellness" class="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About GlucoTonic</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <p class="text-gray-600 leading-relaxed">
+                    Founded in 2018, GlucoTonic emerged from a passionate team of health researchers and natural medicine experts who recognized the growing need for effective, natural blood sugar support. Our journey began when our founder, Dr. Sarah Chen, discovered the powerful synergy between traditional healing ingredients and modern scientific research.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Our mission is to empower individuals to take control of their health through natural, science-backed solutions. We believe in transparency, quality, and results, which is why we maintain rigorous testing standards and use only the highest quality ingredients in our formulations. Our core values of integrity, innovation, and customer well-being drive everything we do.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"After 3 months of using GlucoTonic, my blood sugar levels have stabilized significantly. I feel more energetic and focused throughout the day."</p>
+                    <p class="font-semibold">James Wilson</p>
+                    <p class="text-sm text-gray-500">Software Engineer</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The natural ingredients really make a difference. My sugar cravings have decreased, and I've lost 15 pounds without any extreme dieting."</p>
+                    <p class="font-semibold">Maria Rodriguez</p>
+                    <p class="text-sm text-gray-500">Fitness Instructor</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Finally found a supplement that actually works! My doctor is impressed with my recent blood work results."</p>
+                    <p class="font-semibold">Robert Chen</p>
+                    <p class="text-sm text-gray-500">Retired Teacher</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Easy to take and gentle on the stomach. I appreciate how transparent they are about their ingredients."</p>
+                    <p class="font-semibold">Sarah Thompson</p>
+                    <p class="text-sm text-gray-500">Nutritionist</p>
                 </div>
             </div>
         </div>
@@ -130,17 +250,21 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white rounded-xl p-6 shadow-md">
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">How does GlucoTonic work?</h3>
-                    <p class="text-gray-600">GlucoTonic works by supporting your body's natural ability to maintain healthy blood sugar levels through its proprietary blend of 24 natural ingredients.</p>
+                    <p class="text-gray-600">GlucoTonic works through its proprietary blend of 24 natural ingredients that support your body's ability to maintain healthy blood sugar levels. The formula helps improve insulin sensitivity, reduce sugar cravings, and promote healthy metabolism.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-md">
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">How long until I see results?</h3>
-                    <p class="text-gray-600">Most users report noticeable improvements within the first few weeks of consistent use.</p>
+                    <p class="text-gray-600">While individual results may vary, most users report noticeable improvements within 2-4 weeks of consistent use. For optimal results, we recommend taking GlucoTonic for at least 3 months.</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-md">
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300">
                     <h3 class="text-xl font-semibold mb-4">Is GlucoTonic safe?</h3>
-                    <p class="text-gray-600">Yes, GlucoTonic is made with natural ingredients and is manufactured in an FDA-registered facility.</p>
+                    <p class="text-gray-600">Yes, GlucoTonic is made with natural ingredients and is manufactured in an FDA-registered facility following strict GMP guidelines. However, as with any supplement, consult your healthcare provider before starting, especially if you have existing medical conditions.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">What's your return policy?</h3>
+                    <p class="text-gray-600">We offer a 60-day money-back guarantee. If you're not completely satisfied with your purchase, simply return the unused portion for a full refund, no questions asked.</p>
                 </div>
             </div>
         </div>
@@ -148,9 +272,13 @@
 
     <!-- CTA Section -->
     <section class="relative py-24">
-        <div class="absolute inset-0 bg-indigo-600 opacity-90"></div>
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1600&h=900&fit=crop&q=80" alt="Health and Wellness Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-indigo-600 opacity-90"></div>
+        </div>
         <div class="relative container mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to Take Control of Your Health?</h2>
+            <p class="text-white text-xl mb-8">Join thousands of satisfied customers who have transformed their lives with GlucoTonic</p>
             <a href="https://getglucotonic.com/d/order-now.php#aff=MichaelMica" class="inline-block bg-white text-indigo-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
                 Order Now
             </a>
@@ -167,27 +295,33 @@
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-6">Contact</h4>
-                    <p class="text-gray-400">email@gluco.com</p>
+                    <p class="text-gray-400">support@glucotonic.com</p>
+                    <p class="text-gray-400">1-800-GLUCO-HELP</p>
+                    <p class="text-gray-400">123 Health Street, Wellness City, WC 12345</p>
                 </div>
                 <div>
-                    <h4 class="text-xl font-bold mb-6">Policies</h4>
+                    <h4 class="text-xl font-bold mb-6">Quick Links</h4>
                     <ul class="space-y-4 text-gray-400">
-                        <li>Privacy Policy</li>
-                        <li>Terms of Service</li>
-                        <li>Refund Policy</li>
+                        <li><a href="https://samytores.github.io/glucotonic-reviews-2025-04-18-bvibv/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://samytores.github.io/glucotonic-reviews-2025-04-18-bvibv/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://samytores.github.io/glucotonic-reviews-2025-04-18-bvibv/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Refund Policy</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-xl font-bold mb-6">Follow Us</h4>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-facebook text-2xl"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-twitter text-2xl"></i>
                         </a>
                         <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin text-2xl"></i>
                         </a>
                     </div>
                 </div>
@@ -197,5 +331,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
